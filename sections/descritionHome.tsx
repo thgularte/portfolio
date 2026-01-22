@@ -1,6 +1,7 @@
 "use client";
 
 import { InitialIntroduction } from "@/components/Initial_Introduction";
+import { Container } from "@/components/layout/container";
 
 /**
  * Seção inicial home com avatar rotativo, nome, descrição e ícones redes sociais.
@@ -13,7 +14,9 @@ import { InitialIntroduction } from "@/components/Initial_Introduction";
 export function DescriptionHome() {
   return (
     <section>
-      <InitialIntroduction />
+      <Container>
+        <InitialIntroduction />
+      </Container>
     </section>
   );
 }

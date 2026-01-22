@@ -1,34 +1,37 @@
 @import "tailwindcss";
 @import "@fontsource/lxgw-wenkai-mono-tc";
 
-/* Cores simplificadas (apenas 3 cores) */
 :root {
-  --color-primary: #F2EEE7;    /* fundo principal claro */
-  --color-secondary: #EBE3DA;  /* fundo secundário / bordas */
-  --color-details: #5D2725;    /* links ativos, textos principais */
-  --color-text: #654F4B;     /* texto padrão */
+--color-gray_light: #F2EEE7;
+--color-gray_medium: #D5C6C0;
+--color-brown_light: #EBE3DA;
+--color-brown_medium: #654F4B;
+--color-brown_stronger: #5D2725;
 }
 
-/* Tema escuro (mantido simples, ajustável) */
+/* Tema escuro */
 /* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #0f0f0f;
-    --color-secondary: #1a1a1a;
-    --color-details: #d4a574;
-  }
+:root {
+--color-gray_light: #0f0f0f;
+--color-brown_light: #1a1a1a;
+--color-brown_medium: #d4a574;
+--color-brown_stronger: #b8860b;
+--color-details: var(--color-brown_medium);
+--color-text: #e0e0e0;
+}
 } */
 
-/* Config Tailwind com as 3 cores */
 @theme inline {
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-details: var(--color-details);
-  --color-text: var(--color-text);
-  --font-mono: "LXGW WenKai Mono TC", monospace;
+--color-gray_light: var(--color-gray_light);
+--color-gray_medium: var(--color-gray_medium);
+--color-brown_light: var(--color-brown_light);
+--color-brown_medium: var(--color-brown_medium);
+--color-brown_stronger: var(--color-brown_stronger);
+--font-mono: "LXGW WenKai Mono TC", monospace;
 }
 
 body {
-  background: var(--color-primary);
-  color: var(--color-details);
-  font-family: "LXGW WenKai Mono TC", monospace;
+background: var(--color-gray_light);
+color: var(--color-brown_medium);
+font-family: "LXGW WenKai Mono TC", monospace;
 }

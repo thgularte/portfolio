@@ -34,17 +34,17 @@ type HeaderProps = {
 
 export function Header({ activeLinkId }: HeaderProps) {
   return (
-    <header className="border-b">
+    <header>
       <Container className="flex justify-between items-center py-4">
         <Image
           src="/icone_vermelho.png"
           alt="Logo com iniciais do desenvolvedor"
-          width={40}
-          height={40}
+          width={60}
+          height={60}
           priority
         />
 
-        <nav className="flex gap-4 text-sm font-medium">
+        <nav className="flex gap-4 text-lg font-medium">
           {links.map((link) => {
             const isActive = activeLinkId === link.id;
 
@@ -55,7 +55,7 @@ export function Header({ activeLinkId }: HeaderProps) {
                 className={
                   isActive
                     ? "rounded-full bg-[#6b2a26] text-white px-4 py-1 transition-colors"
-                    : "px-4 py-1 rounded-full text-[#6b2a26] hover:bg-[#6b2a26]/10 transition-colors"
+                    : "px-4 py-1 rounded-full text-brown_medium hover:bg-[#6b2a26]/10 transition-colors"
                 }
               >
                 {link.label}
