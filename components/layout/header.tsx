@@ -19,13 +19,14 @@
 
 import Image from "next/image";
 import { Container } from "./container";
+import Link from "next/link";
 
 const links = [
-  { href: "#home", id: "home", label: "Home" },
-  { href: "#experiencias", id: "experiencias", label: "Experiências" },
-  { href: "#sobre", id: "sobre", label: "Sobre mim" },
-  { href: "#projetos", id: "projetos", label: "Projetos" },
-  { href: "#contato", id: "contato", label: "Contato" },
+  { href: "/", id: "home", label: "Home" },
+  { href: "/experiences", id: "experiences", label: "Experiências" },
+  { href: "/about", id: "about", label: "Sobre mim" },
+  { href: "/projects", id: "projects", label: "Projetos" },
+  { href: "/contact", id: "contact", label: "Contato" },
 ];
 
 type HeaderProps = {
@@ -49,7 +50,7 @@ export function Header({ activeLinkId }: HeaderProps) {
             const isActive = activeLinkId === link.id;
 
             return (
-              <a
+              <Link
                 key={link.id}
                 href={link.href}
                 className={
@@ -59,7 +60,7 @@ export function Header({ activeLinkId }: HeaderProps) {
                 }
               >
                 {link.label}
-              </a>
+              </Link>
             );
           })}
         </nav>
