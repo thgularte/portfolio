@@ -2,7 +2,7 @@ export const formationItem = {
   logoCard: "icons/icon_formation.svg",
   titleCard: "Sistemas de Informação",
   subTitleCard: "Universidade Federal do Rio Grande - FURG",
-  additional: "Formado",
+  additional: "Formado - 2025",
   statusIcon: "icons/icon_calendar.svg"
 };
 
