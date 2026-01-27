@@ -32,7 +32,7 @@ export function AvatarRotation({ primaryImage, secondaryImage }: AvatarRotationP
 
   return (
     <div 
-      className="relative w-64 h-64 rounded-full border-8 border-gray_medium shadow-2xl overflow-visible cursor-pointer"
+      className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 md:border-8 border-gray_medium shadow-2xl overflow-visible cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -51,8 +51,8 @@ export function AvatarRotation({ primaryImage, secondaryImage }: AvatarRotationP
         <Image src={secondaryImage} alt="Secundária" fill className="object-cover rounded-full" priority />
       </div>
 
-      <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-brown_stronger rounded-full flex items-center justify-center shadow-xl border-4 border-gray_medium pointer-events-none z-10">
-        <span className="text-gray_light text-xs font-bold uppercase tracking-wide">Full Stack</span>
+      <div className="absolute -bottom-2 -right-2 md:-bottom-3 md:-right-3 w-16 h-16 md:w-20 md:h-20 bg-brown_stronger rounded-full flex items-center justify-center shadow-xl border-2 md:border-4 border-gray_medium pointer-events-none z-10">
+        <span className="text-gray_light text-[0.65rem] md:text-xs font-bold uppercase tracking-wide text-center px-1">Full Stack</span>
       </div>
     </div>
   );

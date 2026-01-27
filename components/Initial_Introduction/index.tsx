@@ -5,26 +5,28 @@ import { AvatarRotation } from "@/components/ui/avatar_rotation";
 export function InitialIntroduction() {
   return (
     <div className="rounded-2xl">
-      <div className="flex items-center gap-30 p-20">
-        <AvatarRotation
-          primaryImage="/formatura.jpg"
-          secondaryImage="/secundary.jpg"
-        />
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-30 p-6 md:p-20">
+        <div className="flex-shrink-0">
+          <AvatarRotation
+            primaryImage="/formatura.jpg"
+            secondaryImage="/secundary.jpg"
+          />
+        </div>
 
-        <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl mb-2 text-brown_medium">
-            <span className="text-4xl md:text-5xl font-black block md:inline">
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-brown_medium">
+            <span className="text-3xl md:text-4xl lg:text-5xl font-black block">
               Olá,
             </span>{" "}
             eu sou o <span className="font-black">Theodor Gularte</span>
           </h1>
 
-          <p className="text-lg text-brown_medium/80 mb-6">
+          <p className="text-base md:text-lg text-brown_medium/80 mb-6">
             Desenvolvedor Full-stack
           </p>
 
           {/* Ícones redes sociais com links */}
-          <div className="flex gap-3">
+          <div className="flex gap-3 justify-center md:justify-start">
             {/* GitHub */}
             <Link
               href="https://github.com/thgularte"
