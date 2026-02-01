@@ -11,7 +11,7 @@ type Repo = {
 
 export async function getRepos(): Promise<Repo[]> {
   const res = await fetch(
-    'https://api.github.com/users/thgularte/repos?sort=updated&per_page=6',
+    'https://api.github.com/users/thgularte/repos?sort=updated&per_page=100',
     {
       headers: {
         Accept: 'application/vnd.github+json',
