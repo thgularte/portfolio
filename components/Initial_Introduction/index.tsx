@@ -14,14 +14,14 @@ export function InitialIntroduction() {
         </div>
 
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-brown_medium">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-dark_strong">
             <span className="text-3xl md:text-4xl lg:text-5xl font-black block">
               Olá,
             </span>{" "}
             eu sou o <span className="font-black">Theodor Gularte</span>
           </h1>
 
-          <p className="text-base md:text-lg text-brown_medium/80 mb-6">
+          <p className="text-base md:text-lg text-dark_stron/80 mb-6">
             Desenvolvedor Full-stack
           </p>
 
@@ -35,7 +35,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_github.png"
+                  src="icons/icon_git.svg"
                   alt="GitHub"
                   width={40}
                   height={40}
@@ -51,7 +51,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_linkedin.png"
+                  src="icons/icon_linkedin.svg"
                   alt="LinkedIn"
                   width={40}
                   height={40}
@@ -67,7 +67,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_instagram.png"
+                  src="icons/icon_insta.svg"
                   alt="Instagram"
                   width={40}
                   height={40}
@@ -83,7 +83,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_email.png"
+                  src="icons/icon_gmail.svg"
                   alt="Gmail"
                   width={40}
                   height={40}

@@ -17,7 +17,7 @@ import { Container } from "./container";
 
 export function Footer() {
   return (
-    <footer className="border  border-text bg-brown_light">
+    <footer className="border  border-text bg-dark_light">
       <Container className="flex items-center justify-between py-4 text-sm">
         <Image
           src="/icone_vermelho.png"
@@ -27,8 +27,8 @@ export function Footer() {
           priority
         />
 
-        <span className="text-brown_medium">
-          Copyright © {new Date().getFullYear()} - Theodor M Gularte
+        <span className="text-dark_deepest">
+          © {new Date().getFullYear()} - Theodor M Gularte
         </span>
       </Container>
     </footer>

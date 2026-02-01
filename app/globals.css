@@ -2,38 +2,54 @@
 @import "@fontsource/lxgw-wenkai-mono-tc";
 
 :root {
---color-gray_light: #F2EEE7;
---color-gray_medium: #D5C6C0;
---color-brown_light: #EBE3DA;
---color-brown_medium_transparent: #ad9f986f;
---color-brown_medium: #654F4B;
---color-brown_stronger: #5D2725;
+  --color-gray_light: #F2EEE7;
+  --color-gray_medium: #D5C6C0;
+  --color-brown_light: #EBE3DA;
+  --color-brown_medium_transparent: #AD9F98;
+  --color-brown_medium: #654F4B;
+  --color-brown_stronger: #5D2725;
+
+  /* Paleta escura */
+  --color-dark_gray: #959595;
+  --color-dark_medium: #525254;
+  --color-dark_strong: #363636;
+  --color-dark_deepest: #242323;
+  --color-dark_brown: #795238;
+  --color-dark_light: #AEA7A3;
 }
 
 /* Tema escuro */
 /* @media (prefers-color-scheme: dark) {
-:root {
---color-gray_light: #0f0f0f;
---color-brown_light: #1a1a1a;
---color-brown_medium: #d4a574;
---color-brown_stronger: #b8860b;
---color-details: var(--color-brown_medium);
---color-text: #e0e0e0;
-}
+  :root {
+    --color-gray_light: #0f0f0f;
+    --color-brown_light: #1a1a1a;
+    --color-brown_medium: #d4a574;
+    --color-brown_stronger: #b8860b;
+    --color-details: var(--color-brown_medium);
+    --color-text: #e0e0e0;
+  }
 } */
 
 @theme inline {
---color-gray_light: var(--color-gray_light);
---color-gray_medium: var(--color-gray_medium);
---color-brown_light: var(--color-brown_light);
---color-brown_medium_transparent: var(--color-brown_medium_transparent);
---color-brown_medium: var(--color-brown_medium);
---color-brown_stronger: var(--color-brown_stronger);
---font-mono: "LXGW WenKai Mono TC", monospace;
+  --color-gray_light: var(--color-gray_light);
+  --color-gray_medium: var(--color-gray_medium);
+  --color-brown_light: var(--color-brown_light);
+  --color-brown_medium_transparent: var(--color-brown_medium_transparent);
+  --color-brown_medium: var(--color-brown_medium);
+  --color-brown_stronger: var(--color-brown_stronger);
+
+  --color-dark_gray: var(--color-dark_gray);
+  --color-dark_medium: var(--color-dark_medium);
+  --color-dark_strong: var(--color-dark_strong);
+  --color-dark_deepest: var(--color-dark_deepest);
+  --color-dark_brown: var(--color-dark_brown);
+  --color-dark_light: var(--color-dark_light);
+
+  --font-mono: "LXGW WenKai Mono TC", monospace;
 }
 
 body {
-background: var(--color-gray_light);
-color: var(--color-brown_medium);
-font-family: "LXGW WenKai Mono TC", monospace;
+  background: var(--color-gray_light);
+  color: var(--color-brown_medium);
+  font-family: "LXGW WenKai Mono TC", monospace;
 }

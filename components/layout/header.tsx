@@ -63,8 +63,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 href={link.href}
                 className={
                   isActive
-                    ? "rounded-full bg-[#6b2a26] text-white px-4 py-1 transition-colors"
-                    : "px-4 py-1 rounded-full text-brown_medium hover:bg-[#6b2a26]/10 transition-colors"
+                    ? "rounded-full bg-dark_strong text-white px-4 py-1 transition-colors"
+                    : "px-4 py-1 rounded-full text-brown_medium hover:bg-dark_strong/10 transition-colors"
                 }
               >
                 {link.label}
@@ -79,9 +79,9 @@ export function Header({ activeLinkId }: HeaderProps) {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu de navegação"
         >
-          <span className="w-6 h-0.5 bg-[#6b2a26] transition-all"></span>
-          <span className="w-6 h-0.5 bg-[#6b2a26] transition-all"></span>
-          <span className="w-6 h-0.5 bg-[#6b2a26] transition-all"></span>
+          <span className="w-6 h-0.5 bg-dark_strong transition-all"></span>
+          <span className="w-6 h-0.5 bg-dark_strong transition-all"></span>
+          <span className="w-6 h-0.5 bg-dark_strong transition-all"></span>
         </button>
       </Container>
 
@@ -102,7 +102,7 @@ export function Header({ activeLinkId }: HeaderProps) {
         <div className="flex justify-end p-4">
           <button
             onClick={closeMenu}
-            className="text-3xl text-[#6b2a26]"
+            className="text-3xl text-dark_brown"
             aria-label="Fechar menu"
           >
             ×
@@ -120,8 +120,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 onClick={closeMenu}
                 className={
                   isActive
-                    ? "rounded-lg bg-[#6b2a26] text-white px-4 py-3 text-lg font-medium transition-colors"
-                    : "px-4 py-3 rounded-lg text-brown_medium text-lg font-medium hover:bg-[#6b2a26]/10 transition-colors"
+                    ? "rounded-lg bg-dark_brown text-white px-4 py-3 text-lg font-medium transition-colors"
+                    : "px-4 py-3 rounded-lg text-brown_medium text-lg font-medium hover:bg-dark_brown/10 transition-colors"
                 }
               >
                 {link.label}

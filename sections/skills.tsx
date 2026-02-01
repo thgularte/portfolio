@@ -15,20 +15,20 @@ export default function Skills({
   hardSkills 
 }: SkillsProps) { 
   return (
-    <section id="skills" className="py-8 md:py-12 bg-brown_light border border-brown_medium/20"> 
+    <section id="skills" className="py-8 md:py-12 bg-dark_light border border-dark_deepest/20"> 
       <Container>
-        <h2 className="text-2xl md:text-3xl font-black mb-6 md:mb-8 text-center text-brown_medium"> 
+        <h2 className="text-2xl md:text-3xl font-black mb-6 md:mb-8 text-center text-dark_deepest"> 
           Minhas habilidades
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6"> 
           {/* Soft Skills */}
           <div className="bg-gray_light p-4 md:p-6 rounded-xl border border-details/30 shadow-md"> 
-            <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-details flex items-center gap-2">
+            <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-details flex items-center gap-2 text-dark_deepest">
               <span className="w-1 md:w-1.5 h-6 md:h-8 bg-details rounded-full"></span>
               {softSkills.title}
             </h3>
-            <ul className="space-y-1.5 md:space-y-2 text-sm md:text-base text-details/80">
+            <ul className="space-y-1.5 md:space-y-2 text-sm md:text-base text-details/80 text-dark_deepest">
               {softSkills.items.map((skill, index) => (
                 <li key={index}>• {skill}</li>
               ))}
@@ -37,11 +37,11 @@ export default function Skills({
 
           {/* Hard Skills */}
           <div className="bg-gray_light p-4 md:p-6 rounded-xl border border-details/30 shadow-md">
-            <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-details flex items-center gap-2">
+             <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-details flex items-center gap-2 text-dark_deepest">
               <span className="w-1 md:w-1.5 h-6 md:h-8 bg-details rounded-full"></span>
               {hardSkills.title}
             </h3>
-            <ul className="space-y-1.5 md:space-y-2 text-sm md:text-base text-details/80">
+            <ul className="space-y-1.5 md:space-y-2 text-sm md:text-base text-details/80 text-dark_deepest">
               {hardSkills.items.map((skill, index) => (
                 <li key={index}>• {skill}</li>
               ))}
