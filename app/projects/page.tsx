@@ -1,20 +1,18 @@
+"use client";
+
 import { Container } from "@/components/layout/container";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import SectionExperiences from "@/sections/experiencesSection";
 
-export default function ExperiencesPage() {
+export default function ProjectsPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header activeLinkId="experiences" />
-
-      {/* Conteúdo principal */}
+      <Header activeLinkId="projects" />
       <main className="flex-1">
         <Container>
-          <SectionExperiences />
+          <h1>Aqui vai entrar a seção da pagina</h1>
         </Container>
       </main>
-
       <Footer />
     </div>
   );
