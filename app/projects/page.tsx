@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import ProjectCarousel from "@/components/ProjectsCarousel";
 import { useRepos } from "@/hook/useGithubProjects";
+import SectionProjects from "@/sections/projectsSection";
 
 export default function ProjectsPage() {
   const { repos, loading, error } = useRepos();
@@ -22,7 +23,7 @@ export default function ProjectsPage() {
       <Header activeLinkId="projects" />
       <main className="flex-1">
         <Container>
-          <h1 className="mb-4 text-xl font-bold">Meus Projetos</h1>
+          <SectionProjects/>
         </Container>
       </main>
       <Footer />

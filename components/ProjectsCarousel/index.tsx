@@ -38,7 +38,7 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
   const handleNext = () => slider?.current?.next();
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-10">
       {/* Slider */}
       <div ref={sliderRef} className="keen-slider w-full">
         {projetos.map((p, i) => (
