@@ -5,6 +5,7 @@
 --color-gray_light: #F2EEE7;
 --color-gray_medium: #D5C6C0;
 --color-brown_light: #EBE3DA;
+--color-brown_medium_transparent: #ad9f986f;
 --color-brown_medium: #654F4B;
 --color-brown_stronger: #5D2725;
 }
@@ -25,6 +26,7 @@
 --color-gray_light: var(--color-gray_light);
 --color-gray_medium: var(--color-gray_medium);
 --color-brown_light: var(--color-brown_light);
+--color-brown_medium_transparent: var(--color-brown_medium_transparent);
 --color-brown_medium: var(--color-brown_medium);
 --color-brown_stronger: var(--color-brown_stronger);
 --font-mono: "LXGW WenKai Mono TC", monospace;
