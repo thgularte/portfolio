@@ -25,7 +25,7 @@ export default function TechStack({
         {technologies.map((tech, index) => (
           <div
             key={index}
-            className="group flex items-center gap-2 md:gap-3 px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-full bg-dark_light hover:bg-red hover:scale-110 transition-all duration-300 cursor-pointer border border-text-dark_deepest/20 hover:border-text-dark_deepest/40 backdrop-blur-sm"
+            className="group flex items-center gap-2 md:gap-3 px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-full bg-slate_dark hover:bg-slate_light/20 hover:scale-110 transition-all duration-300 cursor-pointer border border-details/20 hover:border-details/40 backdrop-blur-sm"
           >
             <Image
               src={tech.icon}

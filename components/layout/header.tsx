@@ -45,7 +45,7 @@ export function Header({ activeLinkId }: HeaderProps) {
     <header>
       <Container className="flex justify-between items-center py-4">
         <Image
-          src="/icone_vermelho.png"
+          src="/icon_tg.svg"
           alt="Logo com iniciais do desenvolvedor"
           width={60}
           height={60}
@@ -63,8 +63,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 href={link.href}
                 className={
                   isActive
-                    ? "rounded-full bg-dark_strong text-white px-4 py-1 transition-colors"
-                    : "px-4 py-1 rounded-full text-brown_medium hover:bg-dark_strong/10 transition-colors"
+                    ? "rounded-full bg-gray_light text-slate_dark px-4 py-1 transition-colors"
+                    : "px-4 py-1 rounded-full text-gray_light hover:bg-cyan_medium_transparent/10 transition-colors"
                 }
               >
                 {link.label}
@@ -79,9 +79,9 @@ export function Header({ activeLinkId }: HeaderProps) {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu de navegação"
         >
-          <span className="w-6 h-0.5 bg-dark_strong transition-all"></span>
-          <span className="w-6 h-0.5 bg-dark_strong transition-all"></span>
-          <span className="w-6 h-0.5 bg-dark_strong transition-all"></span>
+          <span className="w-6 h-0.5 bg-cyan_medium_transparent transition-all"></span>
+          <span className="w-6 h-0.5 bg-cyan_medium_transparent transition-all"></span>
+          <span className="w-6 h-0.5 bg-cyan_medium_transparent transition-all"></span>
         </button>
       </Container>
 
@@ -95,14 +95,14 @@ export function Header({ activeLinkId }: HeaderProps) {
 
       {/* Menu Lateral Mobile */}
       <aside
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-50 transform transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-64 bg-gray_light shadow-2xl z-50 transform transition-transform duration-300 md:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-end p-4">
           <button
             onClick={closeMenu}
-            className="text-3xl text-dark_brown"
+            className="text-3xl text-cyan_medium_transparent"
             aria-label="Fechar menu"
           >
             ×
@@ -120,8 +120,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 onClick={closeMenu}
                 className={
                   isActive
-                    ? "rounded-lg bg-dark_brown text-white px-4 py-3 text-lg font-medium transition-colors"
-                    : "px-4 py-3 rounded-lg text-brown_medium text-lg font-medium hover:bg-dark_brown/10 transition-colors"
+                    ? "rounded-lg bg-cyan_medium_transparent text-gray_light px-4 py-3 text-lg font-medium transition-colors"
+                    : "px-4 py-3 rounded-lg text-cyan_medium_transparent text-lg font-medium hover:bg-cyan_medium_transparent/10 transition-colors"
                 }
               >
                 {link.label}

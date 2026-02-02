@@ -1,7 +1,6 @@
 import { Container } from "@/components/layout/container";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { AvatarRotation } from "@/components/ui/avatar_rotation";
 import { DescriptionHome } from "@/sections/descritionHome";
 import Skills from "@/sections/skills";
 import Stacks from "@/sections/stacks";

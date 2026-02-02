@@ -15,9 +15,9 @@ const ProjectCard: React.FC<CardProps> = ({
   languages,
 }) => {
   return (
-    <div className="w-full max-w-xs bg-brown_light border border-brown_medium rounded-lg shadow-md overflow-hidden mx-auto mb-4 flex flex-col justify-between h-[380px]">
+    <div className="w-full max-w-xs bg-slate_dark border border-cyan_medium_transparent-alpha rounded-lg shadow-md overflow-hidden mx-auto mb-4 flex flex-col justify-between h-[380px]">
       {/* Header com ícones */}
-      <div className="bg-brown_light px-3 py-3 flex items-center justify-between">
+      <div className="bg-slate_dark px-3 py-3 flex items-center justify-between">
         <Image
           src={"/icons/icon_repo.svg"}
           alt={"Ícone de uma pasta"}
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<CardProps> = ({
       {/* Conteúdo */}
       <div className="px-3 pb-4 flex flex-col flex-1">
         {/* Título */}
-        <h3 className="font-bold text-base text-brown_medium mb-1">
+        <h3 className="font-bold text-base text-cyan_medium_transparent-alpha mb-1">
           {title}
         </h3>
 
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<CardProps> = ({
             href={repoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brown_medium hover:text-brown_stronger text-xs font-medium hover:underline flex items-center"
+            className="text-cyan_medium_transparent-alpha hover:text-cyan_stronger text-xs font-medium hover:underline flex items-center"
           >
             Repositório
             <svg
@@ -70,21 +70,21 @@ const ProjectCard: React.FC<CardProps> = ({
 
         {/* Descrição com altura fixa e overflow auto */}
         <div className="flex-1 mb-2">
-          <p className="text-xs text-brown_medium leading-relaxed h-[140px] overflow-auto">
+          <p className="text-xs text-cyan_medium_transparent-alpha leading-relaxed h-[140px] overflow-auto">
             <span className="font-semibold">Descrição:</span> {description}
           </p>
         </div>
 
         {/* Linguagens */}
         <div>
-          <p className="text-xs text-brown_medium mb-1 font-medium">
+          <p className="text-xs text-cyan_medium_transparent-alpha mb-1 font-medium">
             Linguagens usadas:
           </p>
           <div className="flex flex-wrap gap-1">
             {languages.map((lang, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-brown_medium_transparent text-brown_medium text-xs font-medium rounded-full"
+                className="px-2 py-1 bg-cyan_medium_transparent text-cyan_medium_transparent-alpha text-xs font-medium rounded-full"
               >
                 {lang}
               </span>

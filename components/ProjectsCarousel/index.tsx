@@ -57,13 +57,13 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
       <div className="flex gap-4 mt-4">
         <button
           onClick={handlePrev}
-          className="bg-brown_medium text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-brown_stronger"
+          className="bg-cyan_medium_transparent text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"
         >
           &#8249;
         </button>
         <button
           onClick={handleNext}
-          className="bg-brown_medium text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-brown_stronger"
+          className="bg-cyan_medium_transparent text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"
         >
           &#8250;
         </button>
