@@ -14,14 +14,14 @@ export function InitialIntroduction() {
         </div>
 
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-cyan_medium_transparent-alpha">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-gray_light">
             <span className="text-3xl md:text-4xl lg:text-5xl font-black block">
               Olá,
             </span>{" "}
             eu sou o <span className="font-black">Theodor Gularte</span>
           </h1>
 
-          <p className="text-base md:text-lg text-cyan_medium_transparent-alpha/80 mb-6">
+          <p className="text-base md:text-lg text-gray_light/80 mb-6">
             Desenvolvedor Full-stack
           </p>
 

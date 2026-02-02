@@ -7,7 +7,7 @@ import { profileData } from "@/content/about";
 export default function SectionAbout() {
   
   return (
-    <section className="mt-20">
+    <section className="mt-15">
       <Container>
         <SectionHeader
           icon="icons/icon_about.svg"
@@ -18,7 +18,7 @@ export default function SectionAbout() {
         {/* Layout Desktop: foto à direita */}
         <div className="hidden lg:flex flex-row gap-12 mt-10 max-w-7xl mx-auto items-stretch">
           <div className="flex-1 h-full space-y-6">
-            <div className="text-lg text-cyan_medium_transparent-alpha space-y-4 leading-relaxed h-full">
+            <div className="text-lg text-gray_light space-y-4 leading-relaxed h-full">
               <p>
                 Sou uma pessoa tranquila, gosto de ficar na minha e ajudar os
                 outros sempre que posso. Durante a faculdade, descobri o quanto
@@ -49,7 +49,7 @@ export default function SectionAbout() {
         {/* Layout Mobile: foto centralizada entre texto e abas */}
         <div className="lg:hidden flex flex-col items-center space-y-8 max-w-2xl mx-auto px-4">
           {/* Texto introdutório */}
-          <div className="text-base text-cyan_medium_transparent-alpha space-y-4 leading-relaxed text-justify">
+          <div className="text-base text-gray_light space-y-4 leading-relaxed text-justify">
             <p>
               Sou uma pessoa tranquila, gosto de ficar na minha e ajudar os
               outros sempre que posso. Durante a faculdade, descobri o quanto
@@ -70,7 +70,7 @@ export default function SectionAbout() {
               alt="Foto de perfil"
               width={240}  
               height={300}
-              className="rounded-2xl object-cover shadow-2xl border-4 border-cyan_medium_transparent-alpha w-full h-full"
+              className="rounded-2xl object-cover shadow-2xl border-4 border-gray_light w-full h-full"
               priority
             />
           </div>

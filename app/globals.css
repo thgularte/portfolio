@@ -9,7 +9,7 @@
   --color-slate_medium: #334155;
   --color-slate_dark: #1E293B;
 
-  --color-cyan_medium_transparent: #38BDF81A;
+  --color-gray_dark: #38BDF81A;
   --color-gray_light: #E5E7EB;
   --color-cyan_stronger: #38BDF8;
 }
@@ -19,7 +19,7 @@
   --color-slate_medium: var(--color-slate_medium);
   --color-slate_dark: var(--color-slate_dark);
 
-  --color-cyan_medium_transparent: var(--color-cyan_medium_transparent);
+  --color-gray_dark: var(--color-gray_dark);
   --color-gray_light: var(--color-gray_light);
   --color-cyan_stronger: var(--color-cyan_stronger);
 

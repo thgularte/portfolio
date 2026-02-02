@@ -28,11 +28,11 @@ export default function SectionHeader({
 
       {/* Texto */}
       <div className="text-center">
-        <h2 className="text-cyan_medium_transparent-alpha font-semibold text-4xl leading-tight mb-1">
+        <h2 className="text-gray_light font-semibold text-4xl leading-tight mb-1">
           {title}
         </h2>
 
-        <p className="text-cyan_medium_transparent-alpha text-sm leading-relaxed max-w-md mx-auto">
+        <p className="text-gray_light text-sm leading-relaxed max-w-md mx-auto">
           {subtitle}
         </p>
       </div>

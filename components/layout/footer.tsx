@@ -27,7 +27,7 @@ export function Footer() {
           priority
         />
 
-        <span className="text-cyan_medium_transparent-alpha">
+        <span className="text-gray_light">
           Copyright © {new Date().getFullYear()} - Theodor M Gularte
         </span>
       </Container>

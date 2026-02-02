@@ -4,7 +4,7 @@ import { experiencesItems, formationItem } from "@/content/experiences";
 
 export default function SectionExperiences() {
     return (
-        <section className="mt-15 pb-10 md:pb-14">
+        <section className="mt-15">
         <SectionHeader
           icon="icons/icon_cap.svg"
           title="Formação e Experiências"

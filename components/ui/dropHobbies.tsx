@@ -17,7 +17,7 @@ export default function ProfileSection({ data }: ProfileSectionProps) {
   return (
     <div>
       {/* Tabs */}
-      <div className="flex mb-1 border-b border-cyan_medium_transparent-alpha/10">
+      <div className="flex mb-1 border-b border-gray_light/10">
         {data.map((item, index) => {
           const isActive = activeTab === index;
 
@@ -34,8 +34,8 @@ export default function ProfileSection({ data }: ProfileSectionProps) {
                 cursor-pointer
                 ${
                   isActive
-                    ? "text-cyan_medium_transparent-alpha font-bold border-b-2 border-cyan_medium_transparent-alpha"
-                    : "text-cyan_medium_transparent-alpha/60 hover:text-cyan_medium_transparent-alpha"
+                    ? "text-gray_light font-bold border-b-2 border-gray_light"
+                    : "text-gray_light/60 hover:text-gray_light"
                 }
               `}
             >
@@ -58,7 +58,7 @@ export default function ProfileSection({ data }: ProfileSectionProps) {
 
       {/* Conteúdo */}
       <div className="pt-3">
-        <p className="text-lg leading-relaxed text-cyan_medium_transparent-alpha">
+        <p className="text-lg leading-relaxed text-gray_light">
           {data[activeTab].content}
         </p>
       </div>

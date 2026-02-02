@@ -35,7 +35,7 @@ export default function CardInformation({
       {/* Múltiplos cards */}
       <div className="space-y-2 w-full">
         {items.map((item, index) => (
-          <div key={index} className="bg-slate_dark p-4 px-6 rounded-2xl border border-cyan_medium_transparent-alpha w-full">
+          <div key={index} className="bg-slate_dark p-4 px-6 rounded-2xl border border-gray_light w-full">
             <div className="flex items-start gap-4">
 
               <div className="mt-1 flex h-12 w-12 items-center justify-center">
@@ -51,12 +51,12 @@ export default function CardInformation({
               {/* Conteúdo */}
               <div className="flex flex-col min-w-0 flex-1">
                 {/* Título */}
-                <h3 className="text-cyan_medium_transparent-alpha font-bold text-base">
+                <h3 className="text-gray_light font-bold text-base">
                   {item.titleCard}
                 </h3>
 
                 {/* Subtítulo */}
-                <p className="text-cyan_medium_transparent-alpha text-xs">
+                <p className="text-gray_light text-xs">
                   {item.subTitleCard}
                 </p>
 
@@ -70,7 +70,7 @@ export default function CardInformation({
                       height={12}
                       className="h-3 w-3 flex-shrink-0"
                     />
-                    <span className="text-cyan_medium_transparent-alpha text-xs font-medium">
+                    <span className="text-gray_light text-xs font-medium">
                       {item.additional}
                     </span>
                   </div>
@@ -80,7 +80,7 @@ export default function CardInformation({
 
             {/* Descrição (abaixo se presente) */}
             {item.descriptionCard && (
-              <p className="pt-3 border-t border-slate_dark text-cyan_medium_transparent-alpha text-xs">
+              <p className="pt-3 border-t border-slate_dark text-gray_light text-xs">
                 {item.descriptionCard}
               </p>
             )}

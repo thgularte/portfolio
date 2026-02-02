@@ -64,7 +64,7 @@ export function Header({ activeLinkId }: HeaderProps) {
                 className={
                   isActive
                     ? "rounded-full bg-gray_light text-slate_dark px-4 py-1 transition-colors"
-                    : "px-4 py-1 rounded-full text-gray_light hover:bg-cyan_medium_transparent/10 transition-colors"
+                    : "px-4 py-1 rounded-full text-gray_light hover:bg-gray_light/10 transition-colors"
                 }
               >
                 {link.label}
@@ -79,9 +79,9 @@ export function Header({ activeLinkId }: HeaderProps) {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu de navegação"
         >
-          <span className="w-6 h-0.5 bg-cyan_medium_transparent transition-all"></span>
-          <span className="w-6 h-0.5 bg-cyan_medium_transparent transition-all"></span>
-          <span className="w-6 h-0.5 bg-cyan_medium_transparent transition-all"></span>
+          <span className="w-6 h-0.5 bg-gray_light transition-all"></span>
+          <span className="w-6 h-0.5 bg-gray_light transition-all"></span>
+          <span className="w-6 h-0.5 bg-gray_light transition-all"></span>
         </button>
       </Container>
 
@@ -102,7 +102,7 @@ export function Header({ activeLinkId }: HeaderProps) {
         <div className="flex justify-end p-4">
           <button
             onClick={closeMenu}
-            className="text-3xl text-cyan_medium_transparent"
+            className="text-3xl text-gray_light"
             aria-label="Fechar menu"
           >
             ×
@@ -120,8 +120,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 onClick={closeMenu}
                 className={
                   isActive
-                    ? "rounded-lg bg-cyan_medium_transparent text-gray_light px-4 py-3 text-lg font-medium transition-colors"
-                    : "px-4 py-3 rounded-lg text-cyan_medium_transparent text-lg font-medium hover:bg-cyan_medium_transparent/10 transition-colors"
+                    ? "rounded-lg bg-gray_light text-gray_light px-4 py-3 text-lg font-medium transition-colors"
+                    : "px-4 py-3 rounded-lg text-gray_light text-lg font-medium hover:bg-gray_light/10 transition-colors"
                 }
               >
                 {link.label}
