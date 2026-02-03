@@ -95,7 +95,7 @@ export function Header({ activeLinkId }: HeaderProps) {
 
       {/* Menu Lateral Mobile */}
       <aside
-        className={`fixed top-0 right-0 h-full w-64 bg-gray_light shadow-2xl z-50 transform transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-64 bg-slate_dark shadow-2xl z-50 transform transition-transform duration-300 md:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -120,7 +120,7 @@ export function Header({ activeLinkId }: HeaderProps) {
                 onClick={closeMenu}
                 className={
                   isActive
-                    ? "rounded-lg bg-gray_light text-gray_light px-4 py-3 text-lg font-medium transition-colors"
+                    ? "rounded-lg bg-gray_light text-slate_dark px-4 py-3 text-lg font-medium transition-colors"
                     : "px-4 py-3 rounded-lg text-gray_light text-lg font-medium hover:bg-gray_light/10 transition-colors"
                 }
               >

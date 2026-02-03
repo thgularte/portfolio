@@ -33,12 +33,12 @@ export default function CardInformation({
       </div>
       
       {/* Múltiplos cards */}
-      <div className="space-y-2 w-full">
+      <div className="space-y-5 w-full mb-6">
         {items.map((item, index) => (
           <div key={index} className="bg-slate_dark p-4 px-6 rounded-2xl border border-gray_light w-full">
             <div className="flex items-start gap-4">
 
-              <div className="mt-1 flex h-12 w-12 items-center justify-center">
+              <div className="flex h-12 w-12 items-center justify-center">
                 <Image
                   src={item.logoCard}
                   alt={item.titleCard}
@@ -51,7 +51,7 @@ export default function CardInformation({
               {/* Conteúdo */}
               <div className="flex flex-col min-w-0 flex-1">
                 {/* Título */}
-                <h3 className="text-gray_light font-bold text-base">
+                <h3 className="text-cyan_stronger font-bold text-lg">
                   {item.titleCard}
                 </h3>
 
@@ -80,7 +80,7 @@ export default function CardInformation({
 
             {/* Descrição (abaixo se presente) */}
             {item.descriptionCard && (
-              <p className="pt-3 border-t border-slate_dark text-gray_light text-xs">
+              <p className="pt-3 border-t border-slate_dark text-gray_light text-lg">
                 {item.descriptionCard}
               </p>
             )}

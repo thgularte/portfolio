@@ -1,6 +1,6 @@
 import { DescriptionHome } from "./descritionHome";
-import Skills from "./skills";
-import Stacks from "./stacks";
+import Skills from "../components/Skills";
+import Stacks from "../components/Stacks";
 
 export default function SectionHome() {
   const softSkills = {
