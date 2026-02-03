@@ -14,6 +14,7 @@ export default function FormEmail() {
       className="
         w-full
         max-w-4xl
+        mx-auto
         bg-slate_dark
         border-2 border-cyan_stronger
         rounded-2xl
@@ -59,7 +60,7 @@ export default function FormEmail() {
             min-h-[120px]
             px-4 py-3
             bg-gray_light
-            text-gray_dark
+            text-slate_dark
             placeholder:text-slate_medium
             rounded-2xl
             border border-gray_dark

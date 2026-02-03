@@ -37,6 +37,7 @@ const ReusableButton: React.FC<ReusableButtonProps> = ({
         hover:brightness-110
         focus:outline-none focus:ring-2 focus:ring-cyan_stronger focus:ring-offset-2
         disabled:opacity-50 disabled:cursor-not-allowed
+        cursor-pointer
       `}
     >
       {icon && (
