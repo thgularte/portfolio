@@ -1,27 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-import { AvatarRotation } from "@/components/ui/avatar_rotation";
+import { AvatarHover } from "@/components/ui/avatar_hover";
 
 export function InitialIntroduction() {
   return (
     <div className="rounded-2xl">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-30 p-6 md:p-20">
         <div className="flex-shrink-0">
-          <AvatarRotation
-            primaryImage="/formatura.jpg"
-            secondaryImage="/secundary.jpg"
+          <AvatarHover
+            primaryImage="/image_primary.png"
+            secondaryImage="/image_secondary.png"
           />
         </div>
 
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-brown_medium">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl mb-2 text-gray_light">
             <span className="text-3xl md:text-4xl lg:text-5xl font-black block">
               Olá,
             </span>{" "}
             eu sou o <span className="font-black">Theodor Gularte</span>
           </h1>
 
-          <p className="text-base md:text-lg text-brown_medium/80 mb-6">
+          <p className="text-base md:text-lg text-gray_light/80 mb-6">
             Desenvolvedor Full-stack
           </p>
 
@@ -35,7 +35,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_github.png"
+                  src="/icon_github.svg"
                   alt="GitHub"
                   width={40}
                   height={40}
@@ -51,7 +51,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_linkedin.png"
+                  src="/icon_linkedin.svg"
                   alt="LinkedIn"
                   width={40}
                   height={40}
@@ -67,7 +67,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_instagram.png"
+                  src="icon_insta.svg"
                   alt="Instagram"
                   width={40}
                   height={40}
@@ -83,7 +83,7 @@ export function InitialIntroduction() {
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center cursor-pointer transition-all group">
                 <Image
-                  src="/icone_email.png"
+                  src="/icon_gmail.svg"
                   alt="Gmail"
                   width={40}
                   height={40}

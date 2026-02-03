@@ -45,7 +45,7 @@ export function Header({ activeLinkId }: HeaderProps) {
     <header>
       <Container className="flex justify-between items-center py-4">
         <Image
-          src="/icone_vermelho.png"
+          src="/icon_tg.svg"
           alt="Logo com iniciais do desenvolvedor"
           width={60}
           height={60}
@@ -63,8 +63,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 href={link.href}
                 className={
                   isActive
-                    ? "rounded-full bg-[#6b2a26] text-white px-4 py-1 transition-colors"
-                    : "px-4 py-1 rounded-full text-brown_medium hover:bg-[#6b2a26]/10 transition-colors"
+                    ? "rounded-full bg-gray_light text-slate_dark px-4 py-1 transition-colors"
+                    : "px-4 py-1 rounded-full text-gray_light hover:bg-gray_light/10 transition-colors"
                 }
               >
                 {link.label}
@@ -79,9 +79,9 @@ export function Header({ activeLinkId }: HeaderProps) {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu de navegação"
         >
-          <span className="w-6 h-0.5 bg-[#6b2a26] transition-all"></span>
-          <span className="w-6 h-0.5 bg-[#6b2a26] transition-all"></span>
-          <span className="w-6 h-0.5 bg-[#6b2a26] transition-all"></span>
+          <span className="w-6 h-0.5 bg-gray_light transition-all"></span>
+          <span className="w-6 h-0.5 bg-gray_light transition-all"></span>
+          <span className="w-6 h-0.5 bg-gray_light transition-all"></span>
         </button>
       </Container>
 
@@ -95,14 +95,14 @@ export function Header({ activeLinkId }: HeaderProps) {
 
       {/* Menu Lateral Mobile */}
       <aside
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-2xl z-50 transform transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-64 bg-slate_dark shadow-2xl z-50 transform transition-transform duration-300 md:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-end p-4">
           <button
             onClick={closeMenu}
-            className="text-3xl text-[#6b2a26]"
+            className="text-3xl text-gray_light"
             aria-label="Fechar menu"
           >
             ×
@@ -120,8 +120,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 onClick={closeMenu}
                 className={
                   isActive
-                    ? "rounded-lg bg-[#6b2a26] text-white px-4 py-3 text-lg font-medium transition-colors"
-                    : "px-4 py-3 rounded-lg text-brown_medium text-lg font-medium hover:bg-[#6b2a26]/10 transition-colors"
+                    ? "rounded-lg bg-gray_light text-slate_dark px-4 py-3 text-lg font-medium transition-colors"
+                    : "px-4 py-3 rounded-lg text-gray_light text-lg font-medium hover:bg-gray_light/10 transition-colors"
                 }
               >
                 {link.label}

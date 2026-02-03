@@ -1,39 +1,36 @@
 @import "tailwindcss";
 @import "@fontsource/lxgw-wenkai-mono-tc";
 
+/* =========================
+   TEMA PADRÃO (Slate + Cyan)
+   ========================= */
 :root {
---color-gray_light: #F2EEE7;
---color-gray_medium: #D5C6C0;
---color-brown_light: #EBE3DA;
---color-brown_medium_transparent: #ad9f986f;
---color-brown_medium: #654F4B;
---color-brown_stronger: #5D2725;
-}
+  --color-slate_light: #0F172A;
+  --color-slate_medium: #334155;
+  --color-slate_dark: #1E293B;
 
-/* Tema escuro */
-/* @media (prefers-color-scheme: dark) {
-:root {
---color-gray_light: #0f0f0f;
---color-brown_light: #1a1a1a;
---color-brown_medium: #d4a574;
---color-brown_stronger: #b8860b;
---color-details: var(--color-brown_medium);
---color-text: #e0e0e0;
+  --color-gray_dark: #38BDF81A;
+  --color-gray_light: #E5E7EB;
+  --color-cyan_stronger: #1393ca;
 }
-} */
 
 @theme inline {
---color-gray_light: var(--color-gray_light);
---color-gray_medium: var(--color-gray_medium);
---color-brown_light: var(--color-brown_light);
---color-brown_medium_transparent: var(--color-brown_medium_transparent);
---color-brown_medium: var(--color-brown_medium);
---color-brown_stronger: var(--color-brown_stronger);
---font-mono: "LXGW WenKai Mono TC", monospace;
+  --color-slate_light: var(--color-slate_light);
+  --color-slate_medium: var(--color-slate_medium);
+  --color-slate_dark: var(--color-slate_dark);
+
+  --color-gray_dark: var(--color-gray_dark);
+  --color-gray_light: var(--color-gray_light);
+  --color-cyan_stronger: var(--color-cyan_stronger);
+
+  --font-mono: "LXGW WenKai Mono TC", monospace;
 }
 
+/* =========================
+   BASE
+   ========================= */
 body {
-background: var(--color-gray_light);
-color: var(--color-brown_medium);
-font-family: "LXGW WenKai Mono TC", monospace;
+  background: var(--color-slate_light);
+  color: var(--color-gray_light);
+  font-family: "LXGW WenKai Mono TC", monospace;
 }

@@ -16,7 +16,7 @@ export default function SectionProjects() {
   }));
 
   return (
-    <section className="mt-20">
+    <section className="mt-15">
       <Container>
         <SectionHeader
           icon="icons/icon_project.svg"

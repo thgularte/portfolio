@@ -17,17 +17,17 @@ import { Container } from "./container";
 
 export function Footer() {
   return (
-    <footer className="border  border-text bg-brown_light">
+    <footer className="border  border-text bg-slate_dark">
       <Container className="flex items-center justify-between py-4 text-sm">
         <Image
-          src="/icone_vermelho.png"
+          src="/icon_tg.svg"
           alt="Logo com iniciais do desenvolvedor"
           width={60}
           height={60}
           priority
         />
 
-        <span className="text-brown_medium">
+        <span className="text-gray_light">
           Copyright © {new Date().getFullYear()} - Theodor M Gularte
         </span>
       </Container>

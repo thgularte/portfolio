@@ -15,7 +15,7 @@ export default function SectionHeader({
     <div className="w-full pt-10 pb-3 relative">
       {/* Ícone */}
       <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-        <div className="w-14 h-14 flex items-center justify-center bg-brown_light rounded-lg shadow-md">
+        <div className="w-14 h-14 flex items-center justify-center bg-slate_dark rounded-lg shadow-md">
           <Image
             src={icon}
             alt={title}
@@ -28,11 +28,11 @@ export default function SectionHeader({
 
       {/* Texto */}
       <div className="text-center">
-        <h2 className="text-brown_stronger font-semibold text-4xl leading-tight mb-1">
+        <h2 className="text-gray_light font-semibold text-4xl leading-tight mb-1">
           {title}
         </h2>
 
-        <p className="text-brown_medium text-sm leading-relaxed max-w-md mx-auto">
+        <p className="text-gray_light text-sm leading-relaxed max-w-md mx-auto">
           {subtitle}
         </p>
       </div>
