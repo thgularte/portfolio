@@ -70,7 +70,7 @@ const ProjectCard: React.FC<CardProps> = ({
 
         {/* Descrição com altura fixa e overflow auto */}
         <div className="flex-1 mb-2">
-          <p className="text-xs text-gray_light leading-relaxed h-[140px] overflow-auto">
+          <p className="text-sm text-gray_light leading-relaxed h-[200px] overflow-auto">
             <span className="font-semibold">Descrição:</span> {description}
           </p>
         </div>
