@@ -9,7 +9,7 @@ export default function SectionContact() {
       <SectionHeader
         title="Entre em contato"
         icon={"/icons/icon_gmail.svg"}
-        subtitle={"Ten algum projeto em mente ? Vamos conversar!"}
+        subtitle={"Tem algum projeto em mente ? Vamos conversar!"}
       />
       <FormEmail />
       <div className="flex flex-col items-center gap-4 mt-8">
