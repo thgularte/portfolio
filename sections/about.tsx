@@ -1,9 +1,10 @@
 import Image from "next/image";
-import SectionHeader from "@/components/Section_Header";
+import SectionHeader from "@/components/SectionHeader";
 import HobbiesSection from "@/components/ui/dropHobbies";
 import { Container } from "@/components/layout/container";
 import { profileData } from "@/content/about";
 import Reveal from "@/components/effects/Reveal";
+import { HoverEffect } from "@/components/effects/Hover";
 
 export default function SectionAbout() {
   return (
@@ -36,16 +37,18 @@ export default function SectionAbout() {
               <HobbiesSection data={profileData} />
             </div>
 
-            <div className="w-[250px] h-[350px] flex-shrink-0">
-              <Image
-                src="/image_about.png"
-                alt="Foto de perfil"
-                width={300}
-                height={400}
-                className="rounded-2xl object-cover shadow-2xl border-4 border-gray_light w-full h-full"
-                priority
-              />
-            </div>
+            <HoverEffect scale={1.15}>
+              <div className="w-[250px] h-[350px] flex-shrink-0">
+                <Image
+                  src="/image_about.png"
+                  alt="Foto de perfil"
+                  width={300}
+                  height={400}
+                  className="rounded-2xl object-cover shadow-2xl border-4 border-gray_light w-full h-full"
+                  priority
+                />
+              </div>
+            </HoverEffect>
           </div>
 
           {/* Layout Mobile: foto centralizada entre texto e abas */}

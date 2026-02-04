@@ -1,5 +1,6 @@
+import { HoverEffect } from "@/components/effects/Hover";
 import FormEmail from "@/components/FormEmail";
-import SectionHeader from "@/components/Section_Header";
+import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,6 +20,7 @@ export default function SectionContact() {
         </p>
 
         {/* Badge de e-mail */}
+        <HoverEffect>
         <div
           className="
           flex items-center gap-3
@@ -46,6 +48,7 @@ export default function SectionContact() {
             </span>
           </Link>
         </div>
+        </HoverEffect>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
-import CardInformation from "@/components/Card_Information";
+import CardInformation from "@/components/CardInformation";
 import Reveal from "@/components/effects/Reveal";
-import SectionHeader from "@/components/Section_Header";
+import SectionHeader from "@/components/SectionHeader";
 import { experiencesItems, formationItem } from "@/content/experiences";
 
 export default function SectionExperiences() {

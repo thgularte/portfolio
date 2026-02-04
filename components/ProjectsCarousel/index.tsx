@@ -5,6 +5,7 @@ import { useKeenSlider } from "keen-slider/react";
 import ProjectCard from "../ui/cardRepositories";
 import "keen-slider/keen-slider.min.css";
 import Reveal from "../effects/Reveal";
+import { HoverEffect } from "../effects/Hover";
 
 interface Projeto {
   title: string;
@@ -39,7 +40,7 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
   const handleNext = () => slider?.current?.next();
 
   return (
-    <Reveal>
+    <HoverEffect>
       <div className="flex flex-col items-center mt-10">
         {/* Slider */}
         <div ref={sliderRef} className="keen-slider w-full">
@@ -71,7 +72,7 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
           </button>
         </div>
       </div>
-    </Reveal>
+    </HoverEffect>
   );
 };
 

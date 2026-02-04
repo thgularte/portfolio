@@ -1,5 +1,5 @@
 import ProjectCarousel from "@/components/ProjectsCarousel";
-import SectionHeader from "@/components/Section_Header";
+import SectionHeader from "@/components/SectionHeader";
 import { Container } from "@/components/layout/container";
 import GithubContributions from "@/components/PaintingGibhub";
 import { useRepos } from "@/hook/useGithubProjects";

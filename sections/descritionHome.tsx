@@ -1,6 +1,6 @@
 "use client";
 
-import { InitialIntroduction } from "@/components/Initial_Introduction";
+import { InitialIntroduction } from "@/components/InitialIntroduction";
 import { Container } from "@/components/layout/container";
 
 /**
