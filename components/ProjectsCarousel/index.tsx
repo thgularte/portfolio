@@ -4,6 +4,7 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import ProjectCard from "../ui/cardRepositories";
 import "keen-slider/keen-slider.min.css";
+import Reveal from "../effects/Reveal";
 
 interface Projeto {
   title: string;
@@ -38,37 +39,39 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
   const handleNext = () => slider?.current?.next();
 
   return (
-    <div className="flex flex-col items-center mt-10">
-      {/* Slider */}
-      <div ref={sliderRef} className="keen-slider w-full">
-        {projetos.map((p, i) => (
-          <div key={i} className="keen-slider__slide">
-            <ProjectCard
-              title={p.title}
-              repoLink={p.repoLink}
-              description={p.description}
-              languages={p.languages}
-            />
-          </div>
-        ))}
-      </div>
+    <Reveal>
+      <div className="flex flex-col items-center mt-10">
+        {/* Slider */}
+        <div ref={sliderRef} className="keen-slider w-full">
+          {projetos.map((p, i) => (
+            <div key={i} className="keen-slider__slide">
+              <ProjectCard
+                title={p.title}
+                repoLink={p.repoLink}
+                description={p.description}
+                languages={p.languages}
+              />
+            </div>
+          ))}
+        </div>
 
-      {/* Setas abaixo */}
-      <div className="flex gap-4 mt-4">
-        <button
-          onClick={handlePrev}
-          className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"
-        >
-          &#8249;
-        </button>
-        <button
-          onClick={handleNext}
-          className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"
-        >
-          &#8250;
-        </button>
+        {/* Setas abaixo */}
+        <div className="flex gap-4 mt-4 mb-10">
+          <button
+            onClick={handlePrev}
+            className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"
+          >
+            &#8249;
+          </button>
+          <button
+            onClick={handleNext}
+            className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"
+          >
+            &#8250;
+          </button>
+        </div>
       </div>
-    </div>
+    </Reveal>
   );
 };
 

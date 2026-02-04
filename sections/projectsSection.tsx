@@ -1,7 +1,9 @@
 import ProjectCarousel from "@/components/ProjectsCarousel";
 import SectionHeader from "@/components/Section_Header";
 import { Container } from "@/components/layout/container";
+import GithubContributions from "@/components/PaintingGibhub";
 import { useRepos } from "@/hook/useGithubProjects";
+import Reveal from "@/components/effects/Reveal";
 
 export default function SectionProjects() {
   // chama o hook
@@ -16,19 +18,23 @@ export default function SectionProjects() {
   }));
 
   return (
-    <section className="mt-15">
-      <Container>
-        <SectionHeader
-          icon="icons/icon_project.svg"
-          title="Projetos desenvolvidos"
-          subtitle="Alguns dos projetos que desenvolvi ao longo da minha jornada"
-        />
+    <Reveal>
+      <section className="mt-15">
+        <Container>
+          <SectionHeader
+            icon="icons/icon_project.svg"
+            title="Projetos desenvolvidos"
+            subtitle="Alguns dos projetos que desenvolvi ao longo da minha jornada"
+          />
 
-        {loading && <p>Carregando projetos...</p>}
-        {error && <p>Erro ao carregar projetos: {error}</p>}
+          <GithubContributions />
 
-        {!loading && !error && <ProjectCarousel projetos={projects} />}
-      </Container>
-    </section>
+          {loading && <p>Carregando projetos...</p>}
+          {error && <p>Erro ao carregar projetos: {error}</p>}
+
+          {!loading && !error && <ProjectCarousel projetos={projects} />}
+        </Container>
+      </section>
+    </Reveal>
   );
 }
