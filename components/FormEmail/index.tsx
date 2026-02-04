@@ -16,7 +16,7 @@ export default function FormEmail() {
         max-w-4xl
         mx-auto
         bg-slate_dark
-        border-2 border-cyan_stronger
+        border-2 border-gray_light
         rounded-2xl
         p-6
         flex flex-col gap-6
