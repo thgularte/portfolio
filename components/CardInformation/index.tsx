@@ -35,10 +35,9 @@ export default function CardInformation({
 
       {/* Múltiplos cards */}
       <div className="space-y-5 w-full mb-6">
-        {items.map((item, index) => (
-          <HoverEffect>
+        {items.map((item) => (
+          <HoverEffect key={item.titleCard}>
             <div
-              key={index}
               className="bg-slate_dark p-4 px-6 rounded-2xl border border-gray_light w-full"
             >
               <div className="flex items-start gap-4">
