@@ -23,8 +23,8 @@ export default function TechStack({
       </h3>
 
       <div className="flex flex-wrap gap-3 md:gap-4 lg:gap-6 justify-center items-center pb-4 max-w-3xl mx-auto">
-        {technologies.map((tech, index) => (
-          <HoverEffect key={index}>
+        {technologies.map((tech ) => (
+          <HoverEffect key={tech.name} scale={1.15}>
             <div
               className="
                 flex items-center gap-2 md:gap-3

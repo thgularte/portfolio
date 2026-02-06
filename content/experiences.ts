@@ -10,7 +10,7 @@ export const experiencesItems = [
   {
     logoCard: "icons/icon_briefcase.svg",
     titleCard: "Experiência como Full Stack",
-    subTitleCard: "Pesquisa e Modelagem Ambiental",
+    subTitleCard: "SIAPESQ - Sistema de Inteligência Artificial em Pesquisa Ambiental",
     descriptionCard: "Na Siapesq, iniciei minha trajetória focado no desenvolvimento de interfaces utilizando React, contribuindo para a criação de telas e aprimoramento da experiência do usuário. Com o tempo, ampliei minha atuação para o Back-end, trabalhando na modelagem do banco de dados, criação de novas tabelas e integração dessas estruturas com o Front-end. Além do desenvolvimento, também assumo a gestão da equipe de Front-end, organizando demandas e garantindo a qualidade das entregas.",
     statusIcon: "icons/icon_calendar.svg",
     additional: "Out de 2023 - Atualmente"
