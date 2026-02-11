@@ -2,6 +2,7 @@ import { DescriptionHome } from "./descritionHome";
 import Skills from "../components/Skills";
 import Stacks from "../components/Stacks";
 import Reveal from "@/components/effects/Reveal";
+import { TestimonialsSection } from "@/components/FeedBacks";
 
 export default function SectionHome() {
   const softSkills = {
@@ -35,6 +36,7 @@ export default function SectionHome() {
         <DescriptionHome />
         <Skills softSkills={softSkills} hardSkills={hardSkills} />
         <Stacks />
+        <TestimonialsSection/>
       </section>
     </Reveal>
   );

@@ -17,7 +17,7 @@ export default function TechStack({
   title = "Stack's",
 }: TechStackProps) {
   return (
-    <div className="p-6 md:p-15">
+    <div className="p-6 md:p-15 border-y border-gray_light">
       <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-center">
         {title}
       </h3>
