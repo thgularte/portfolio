@@ -33,9 +33,9 @@ export function TestimonialsSection() {
   );
 
   return (
-    <section className="relative w-full py-20">
+    <section className="relative w-full p-10 bg-slate_dark">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="mb-12 text-center text-3xl font-bold text-white">
+        <h2 className="mb-12 text-center text-3xl font-bold text-gray_light">
           O que dizem sobre meu trabalho
         </h2>
 
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Setas abaixo dos cards */}
-        <div className="flex justify-center gap-4 mt-4 mb-10">
+        <div className="flex justify-center gap-4 mt-4">
           <button
             onClick={prev}
             className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg cursor-pointer"

@@ -8,7 +8,7 @@ interface Props {
 
 export function CardFeedback({ testimonial }: Props) {
   return (
-    <div className="relative h-[450px] flex flex-col rounded-2xl border border-gray_light bg-slate_dark p-8">
+    <div className="relative h-[450px] flex flex-col rounded-2xl border border-cyan_stronger bg-slate_light p-8">
 
       <Image
         src="/icons/icon_quote.svg"

@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Header activeLinkId="home" />
         <SectionHome />
-      <Footer />
+      <Footer showBorderTop={false}/>
     </div>
   );
 }

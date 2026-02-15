@@ -10,14 +10,23 @@ import { Container } from "./container";
  * @example
  * ```tsx
  * <Footer/>
+ * <Footer showBorderTop={false}/>
  * ```
  * 
  * @returns Elemento footer com informações de copyright.
  */
 
-export function Footer() {
+interface FooterProps {
+  /**
+   * Controla se a borda superior deve ser exibida.
+   * @default true
+   */
+  showBorderTop?: boolean;
+}
+
+export function Footer({ showBorderTop = true }: FooterProps) {
   return (
-    <footer className="border  border-text bg-slate_dark">
+    <footer className={`bg-slate_dark ${showBorderTop ? "border-t border-text" : ""}`}>
       <Container className="flex items-center justify-between py-4 text-sm">
         <Image
           src="/icon_tg.svg"
