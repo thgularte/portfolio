@@ -1,4 +1,4 @@
-// components/ui/TestimonialCard.tsx
+// components/ui/CardFeedback.tsx
 import { Testimonial } from "@/content/feedbacks";
 import Image from "next/image";
 
@@ -9,7 +9,6 @@ interface Props {
 export function CardFeedback({ testimonial }: Props) {
   return (
     <div className="relative h-[450px] flex flex-col rounded-2xl border border-cyan_stronger bg-slate_light p-8">
-
       <Image
         src="/icons/icon_quote.svg"
         alt="Quote"
@@ -18,11 +17,11 @@ export function CardFeedback({ testimonial }: Props) {
         className="mb-4 opacity-80"
       />
 
-      <p className="mb-6 text-sm leading-relaxed text-gray-300">
+      <p className="mb-6 text-sm leading-relaxed text-gray-300 flex-1 overflow-y-auto">
         {testimonial.quote}
       </p>
 
-      <div className="border-l-4 border-cyan_stronger pl-4">
+      <div className="border-l-4 border-cyan_stronger pl-4 mt-auto">
         {testimonial.linkedin ? (
           <a
             href={testimonial.linkedin}
