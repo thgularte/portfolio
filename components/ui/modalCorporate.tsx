@@ -32,7 +32,7 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
   return (
     <div
-      className="absolute inset-0 flex items-start justify-center z-50 p-6 overflow-y-auto"
+      className="inset-0 flex items-start justify-center z-1000 p-6 overflow-y-auto"
       onClick={onClose}
     >
       <div

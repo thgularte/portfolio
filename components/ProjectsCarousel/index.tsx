@@ -45,10 +45,10 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
   return (
     <div className="flex flex-col items-center mt-10">
       {/* Slider com padding extra para não cortar o efeito de hover */}
-      <div className="w-full px-2 py-4">
+      <div className="w-full px-2">
         <div ref={sliderRef} className="keen-slider">
           {projetos.map((p, i) => (
-            <div key={i} className="keen-slider__slide flex justify-center">
+            <div className="keen-slider__slide flex justify-center px-1.5 py-1.5">
               <ProjectCard
                 title={p.title}
                 repoLink={p.repoLink}
@@ -69,7 +69,7 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
           aria-label="Projeto anterior"
         >
           <svg
-            className="w-5 h-5 transition-transform group-hover:-translate-x-0.5"
+            className="w-5 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
           aria-label="Próximo projeto"
         >
           <svg
-            className="w-5 h-5 transition-transform group-hover:translate-x-0.5"
+            className="w-5 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

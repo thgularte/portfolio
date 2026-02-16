@@ -54,18 +54,48 @@ export function TestimonialsSection() {
         </div>
 
         {/* Controles */}
-        <div className="flex justify-center gap-4">
+        <div className="flex items-center justify-center gap-6 mt-6 mb-10">
+
+          {/* Botão Anterior */}
           <button
             onClick={prev}
-            className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors"
+            className="group relative bg-gradient-to-br from-slate_medium to-slate_dark hover:from-cyan_stronger/20 hover:to-cyan_stronger/10 text-gray_light rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-cyan_stronger/20 border border-slate_medium hover:border-cyan_stronger transition-all duration-300 hover:scale-110"
+            aria-label="Projeto anterior"
           >
-            &#8249;
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
           </button>
+
+          {/* Botão Próximo */}
           <button
             onClick={next}
-            className="bg-gray_dark text-gray_light rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors"
+            className="group relative bg-gradient-to-br from-slate_medium to-slate_dark hover:from-cyan_stronger/20 hover:to-cyan_stronger/10 text-gray_light rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-cyan_stronger/20 border border-slate_medium hover:border-cyan_stronger transition-all duration-300 hover:scale-110"
+            aria-label="Próximo projeto"
           >
-            &#8250;
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </button>
         </div>
       </div>

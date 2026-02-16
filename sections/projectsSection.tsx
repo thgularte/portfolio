@@ -21,16 +21,7 @@ export default function SectionProjects() {
     description: r.description || "Sem descrição",
     languages: r.language ? [r.language] : [],
   }));
-  const [selectedProject, setSelectedProject] =
-    useState<CorporateProject | null>(null);
 
-  const openModal = (project: CorporateProject) => {
-    setSelectedProject(project);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
   return (
     <Reveal>
       <section className="mt-15">

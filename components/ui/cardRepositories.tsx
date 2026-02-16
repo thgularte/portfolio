@@ -16,7 +16,7 @@ const ProjectCard: React.FC<CardProps> = ({
   languages,
 }) => {
   return (
-    <HoverEffect scale={1.02} className="group bg-slate_dark border border-slate_medium hover:border-cyan_stronger rounded-xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col justify-between h-[480px] w-full transition-all duration-300">
+    <HoverEffect className="group bg-slate_dark border border-slate_medium hover:border-cyan_stronger rounded-xl shadow-lg hover:shadow-2xl overflow-hidden flex flex-col justify-between h-[480px] w-full transition-all duration-300">
       {/* Header com ícones e gradiente sutil */}
       <div className="relative bg-gradient-to-br from-slate_medium/30 to-slate_dark px-4 py-4 flex items-center justify-between border-b border-slate_medium/50">
         <div className="flex items-center gap-2">
