@@ -20,11 +20,15 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
     };
 
     if (project) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       document.addEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'hidden';
+
     }
 
     return () => {
       document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'unset';
     };
   }, [project, onClose]);
 
@@ -32,11 +36,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
   return (
     <div
-      className="inset-0 flex items-start justify-center z-1000 p-6 overflow-y-auto"
+      className="fixed inset-0 flex items-start justify-center z-[9999] pointer-events-none"
       onClick={onClose}
     >
       <div
-        className="bg-slate-900 border border-blue-500/20 rounded-3xl w-full max-w-4xl max-h-[85vh] overflow-y-auto p-10 relative shadow-xl"
+        className="modal-scroll bg-slate-900 border border-cyan_stronger/20 rounded-2xl w-full max-w-4xl p-10 relative shadow-2xl pointer-events-auto max-h-[82vh] overflow-y-auto"
         style={
           {
             '--accent-color': project.accentColor,
@@ -47,13 +51,13 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 w-9 h-9 bg-white/5 border border-white/10 rounded-lg text-slate-400 flex items-center justify-center transition-all duration-300 hover:bg-red-500/15 hover:border-red-500 hover:text-red-500"
+          className="absolute top-6 right-6 w-9 h-9 bg-gray_light/5 border border-gray_light/10 rounded-lg text-slate-400 flex items-center justify-center transition-all duration-300 hover:bg-red-500/15 hover:border-red-500 hover:text-red-500 z-10"
         >
           ✕
         </button>
 
         {/* Header */}
-        <div className="flex items-start gap-6 mb-8 pb-6 border-b border-white/10">
+        <div className="flex items-start gap-6 mb-8 pb-6 border-b border-gray_light/10">
           <div
             className="text-5xl"
             style={{
@@ -75,17 +79,17 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
               {project.subtitle}
             </p>
 
-            <span className="inline-block px-3 py-1 bg-white/5 rounded-md text-xs text-slate-400 font-mono">
+            <span className="inline-block px-3 py-1 bg-gray_light/5 rounded-md text-xs text-slate-400 font-mono">
               {project.company}
             </span>
           </div>
         </div>
 
-         <div className="flex flex-wrap gap-2.5 mb-8">
+        <div className="flex flex-wrap gap-2.5 mb-8">
           {project.fullData.tags.map((tag, idx) => (
             <span
               key={idx}
-              className="px-4 py-2 bg-blue-500/8 border border-blue-500/20 rounded-lg text-xs text-blue-400 font-semibold font-mono"
+              className="px-4 py-2 bg-cyan_stronger/8 border border-cyan_stronger/20 rounded-lg text-xs text-cyan_stronger font-semibold font-mono"
             >
               {tag}
             </span>
@@ -94,11 +98,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
         {/* Overview section */}
         <div className="mb-8">
-          <h3 
+          <h3
             className="text-sm uppercase tracking-wide mb-4 font-semibold font-mono flex items-center gap-2.5"
             style={{ color: project.accentColor }}
           >
-            <span 
+            <span
               className="w-0.5 h-4.5 rounded"
               style={{ background: project.accentColor }}
             />
@@ -107,8 +111,8 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
           <p className="text-sm leading-relaxed text-slate-400 mb-3 font-mono">
             {project.description}
           </p>
-          <p 
-            className="text-sm leading-relaxed text-slate-500 mt-3 p-4 bg-blue-500/5 rounded-lg font-mono"
+          <p
+            className="text-sm leading-relaxed text-slate-500 mt-3 p-4 bg-cyan_stronger/5 rounded-lg font-mono"
             style={{ borderLeft: `3px solid ${project.accentColor}` }}
           >
             {project.fullData.context}
@@ -117,11 +121,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
         {/* Role section */}
         <div className="mb-8">
-          <h3 
+          <h3
             className="text-sm uppercase tracking-wide mb-4 font-semibold font-mono flex items-center gap-2.5"
             style={{ color: project.accentColor }}
           >
-            <span 
+            <span
               className="w-0.5 h-4.5 rounded"
               style={{ background: project.accentColor }}
             />
@@ -129,11 +133,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
           </h3>
           <ul className="space-y-3">
             {project.fullData.role.map((item, idx) => (
-              <li 
+              <li
                 key={idx}
                 className="text-sm leading-relaxed text-slate-400 pl-6 relative font-mono"
               >
-                <span 
+                <span
                   className="absolute left-0 font-bold"
                   style={{ color: project.accentColor }}
                 >
@@ -147,11 +151,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
         {/* Challenges section */}
         <div className="mb-8">
-          <h3 
+          <h3
             className="text-sm uppercase tracking-wide mb-4 font-semibold font-mono flex items-center gap-2.5"
             style={{ color: project.accentColor }}
           >
-            <span 
+            <span
               className="w-0.5 h-4.5 rounded"
               style={{ background: project.accentColor }}
             />
@@ -159,11 +163,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
           </h3>
           <ul className="space-y-3">
             {project.fullData.challenges.map((item, idx) => (
-              <li 
+              <li
                 key={idx}
                 className="text-sm leading-relaxed text-slate-400 pl-6 relative font-mono"
               >
-                <span 
+                <span
                   className="absolute left-0 font-bold"
                   style={{ color: project.accentColor }}
                 >
@@ -177,11 +181,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
         {/* Impact section */}
         <div className="mb-8">
-          <h3 
+          <h3
             className="text-sm uppercase tracking-wide mb-4 font-semibold font-mono flex items-center gap-2.5"
             style={{ color: project.accentColor }}
           >
-            <span 
+            <span
               className="w-0.5 h-4.5 rounded"
               style={{ background: project.accentColor }}
             />
@@ -189,11 +193,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
           </h3>
           <ul className="space-y-3">
             {project.fullData.impact.map((item, idx) => (
-              <li 
+              <li
                 key={idx}
                 className="text-sm leading-relaxed text-slate-400 pl-6 relative font-mono"
               >
-                <span 
+                <span
                   className="absolute left-0 font-bold"
                   style={{ color: project.accentColor }}
                 >
@@ -207,11 +211,11 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
 
         {/* Highlights section */}
         <div>
-          <h3 
+          <h3
             className="text-sm uppercase tracking-wide mb-4 font-semibold font-mono flex items-center gap-2.5"
             style={{ color: project.accentColor }}
           >
-            <span 
+            <span
               className="w-0.5 h-4.5 rounded"
               style={{ background: project.accentColor }}
             />
@@ -221,9 +225,9 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
             {project.fullData.highlights.map((highlight, idx) => (
               <div
                 key={idx}
-                className="p-4 bg-blue-500/5 border border-blue-500/15 rounded-xl text-[13px] text-slate-400 font-medium font-mono flex items-center gap-2.5"
+                className="p-4 bg-cyan_stronger/5 border border-cyan_stronger/15 rounded-xl text-[13px] text-slate-400 font-medium font-mono flex items-center gap-2.5"
               >
-                <span 
+                <span
                   className="font-bold text-base"
                   style={{ color: project.accentColor }}
                 >
@@ -237,25 +241,25 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
       </div>
 
       <style jsx>{`
-        /* Custom scrollbar */
-        div::-webkit-scrollbar {
+        /* Scroll SOMENTE do modal */
+        .modal-scroll::-webkit-scrollbar {
           width: 8px;
         }
 
-        div::-webkit-scrollbar-track {
+        .modal-scroll::-webkit-scrollbar-track {
           background: rgba(74, 133, 255, 0.05);
-          border-radius: 4px;
+          border-radius: 10px;
         }
 
-        div::-webkit-scrollbar-thumb {
+        .modal-scroll::-webkit-scrollbar-thumb {
           background: rgba(74, 133, 255, 0.2);
-          border-radius: 4px;
+          border-radius: 10px;
         }
 
-        div::-webkit-scrollbar-thumb:hover {
+        .modal-scroll::-webkit-scrollbar-thumb:hover {
           background: rgba(74, 133, 255, 0.3);
         }
       `}</style>
-      </div>
+    </div>
   );
 };
