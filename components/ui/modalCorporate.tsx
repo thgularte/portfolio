@@ -219,7 +219,7 @@ export const CorporateProjectModal: React.FC<CorporateProjectModalProps> = ({
               className="w-0.5 h-4.5 rounded"
               style={{ background: project.accentColor }}
             />
-            Destaques do Projeto
+            Diferenciais da Minha Atuação
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-5">
             {project.fullData.highlights.map((highlight, idx) => (

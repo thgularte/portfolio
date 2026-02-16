@@ -59,10 +59,10 @@ export const corporateProjectsContent: CorporateProject[] = [
         'Maior organização e confiabilidade na coleta de dados pesqueiros'
       ],
       highlights: [
-        'Impacto social',
-        'Arquitetura offline-first',
-        'Automação de documentos',
-        'Alta responsabilidade técnica'
+        'Atuação em projeto de impacto nacional',
+        'Definição e manutenção de arquitetura offline-first',
+        'Automação de geração documental',
+        'Responsabilidade sobre fluxo crítico de dados'
       ]
     }
   },
@@ -71,7 +71,7 @@ export const corporateProjectsContent: CorporateProject[] = [
     icon: '🌊',
     title: 'PHYTOBLOOM',
     subtitle: 'Sistema de Monitoramento Ambiental',
-    company: 'COPEL (Parceria)',
+    company: 'SIAPESQ / COPEL (Parceria)',
     description:
       'Aplicação desktop para monitoramento de indicadores ambientais em usinas hidrelétricas, com processamento e análise de dados geoespaciais (TIF).',
     tags: ['Electron', 'React', 'Geoespacial'],
@@ -105,10 +105,10 @@ export const corporateProjectsContent: CorporateProject[] = [
         'Apoio estratégico à tomada de decisão em usinas hidrelétricas'
       ],
       highlights: [
-        'Dados científicos',
-        'Processamento geoespacial',
-        'Alertas automáticos',
-        'Tomada de decisão orientada a dados'
+        'Implementação de processamento geoespacial',
+        'Estruturação de lógica de alertas automáticos',
+        'Integração entre camada científica e UI',
+        'Desenvolvimento orientado a dados ambientais'
       ]
     }
   },
