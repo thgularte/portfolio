@@ -48,7 +48,7 @@ const ProjectCarousel: React.FC<CarouselProps> = ({ projetos }) => {
       <div className="w-full px-2">
         <div ref={sliderRef} className="keen-slider">
           {projetos.map((p, i) => (
-            <div className="keen-slider__slide flex justify-center px-1.5 py-1.5">
+            <div key={p.title} className="keen-slider__slide flex justify-center px-1.5 py-1.5">
               <ProjectCard
                 title={p.title}
                 repoLink={p.repoLink}
