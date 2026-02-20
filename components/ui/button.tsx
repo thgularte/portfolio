@@ -29,7 +29,7 @@ const ReusableButton: React.FC<ReusableButtonProps> = ({
         ${width}
         flex items-center justify-center gap-3
         px-6 py-4
-        rounded-2xl
+        rounded-lg
         bg-cyan_stronger
         text-gray_light
         font-semibold

@@ -29,14 +29,14 @@ export default function TechStack({
               className="
                 flex items-center gap-2 md:gap-3
                 px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3
-                rounded-full
+                rounded-lg
                 bg-slate_dark
                 border border-details/20
                 backdrop-blur-sm
                 cursor-pointer
                 transition-colors
                 hover:bg-slate_light/20
-                hover:border-details/40
+                hover:border-cyan_stronger/40
               "
             >
               <Image

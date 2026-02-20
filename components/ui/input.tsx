@@ -58,7 +58,7 @@ const ReusableInput: React.FC<ReusableInputProps> = ({
           bg-gray_light
           text-slate_dark
           placeholder:text-slate_medium
-          rounded-2xl
+          rounded-lg
           border border-gray_dark
           focus:outline-none
           focus:ring-2 focus:ring-cyan_stronger

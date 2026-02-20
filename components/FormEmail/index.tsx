@@ -17,7 +17,7 @@ export default function FormEmail() {
         mx-auto
         bg-slate_dark
         border-2 border-gray_light
-        rounded-2xl
+        rounded-lg
         p-6
         flex flex-col gap-6
       "
@@ -62,7 +62,7 @@ export default function FormEmail() {
             bg-gray_light
             text-slate_dark
             placeholder:text-slate_medium
-            rounded-2xl
+            rounded-lg
             border border-gray_dark
             focus:outline-none
             focus:ring-2 focus:ring-cyan_stronger

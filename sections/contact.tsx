@@ -27,7 +27,7 @@ export default function SectionContact() {
           px-5 py-3
           bg-gray_light
           text-gray_dark
-          rounded-full
+          rounded-lg
           border border-gray_light
           shadow-sm
         "
