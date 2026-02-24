@@ -32,4 +32,10 @@ export const testimonials: Testimonial[] = [
     name: "Flávio Wallefy",
     role: "Desenvolvedor",
   },
+  {
+    id: 4,
+    quote: "Tive a oportunidade de trabalhar com o Theo e posso dizer que é um profissional muito dedicado e parceiro de equipe. Sempre foi alguém que dá conta do que assume, corre atrás quando precisa aprender algo novo e não deixa problema sem solução. Além disso, é tranquilo de trabalhar, sabe ouvir, troca ideia e contribui de verdade para o time evoluir."
+,    name: "Bruno Lobato",
+    role: "Desenvolvedor",
+  }
 ];

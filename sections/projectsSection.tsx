@@ -4,10 +4,6 @@ import { Container } from "@/components/layout/container";
 import GithubContributions from "@/components/PaintingGibhub";
 import { useRepos } from "@/hook/useGithubProjects";
 import Reveal from "@/components/effects/Reveal";
-import {
-  CorporateProject
-} from "@/content/projectsCorporate";
-import { useState } from "react";
 import ProjectsCorporate from "@/components/CardsCorporate";
 
 export default function SectionProjects() {

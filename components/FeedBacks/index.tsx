@@ -10,6 +10,7 @@ const AUTO_SLIDE_TIME = 5000;
 export function TestimonialsSection() {
   const [index, setIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(1);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const updateItemsPerSlide = () => {
@@ -32,9 +33,11 @@ export function TestimonialsSection() {
   }
 
   useEffect(() => {
+    if (isPaused) return;
+
     const interval = setInterval(next, AUTO_SLIDE_TIME);
     return () => clearInterval(interval);
-  }, [totalSlides]);
+  }, [isPaused, totalSlides]);
 
   const start = index * itemsPerSlide;
   const visibleItems = testimonials.slice(start, start + itemsPerSlide);
@@ -47,7 +50,11 @@ export function TestimonialsSection() {
         </h2>
 
         {/* Slider */}
-        <div className="relative grid gap-6 md:grid-cols-2 mb-8">
+        <div
+          className="relative grid gap-6 md:grid-cols-2 mb-8"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           {visibleItems.map((item) => (
             <CardFeedback key={item.id} testimonial={item} />
           ))}
@@ -55,7 +62,6 @@ export function TestimonialsSection() {
 
         {/* Controles */}
         <div className="flex items-center justify-center gap-6 mt-6 mb-10">
-
           {/* Botão Anterior */}
           <button
             onClick={prev}
