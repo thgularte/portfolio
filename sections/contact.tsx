@@ -13,7 +13,7 @@ export default function SectionContact() {
         subtitle={"Tem algum projeto em mente ? Vamos conversar!"}
       />
       <FormEmail />
-      <div className="flex flex-col items-center gap-4 mt-8">
+      <div className="flex flex-col items-center gap-4 mt-8 mb-12">
         {/* Texto */}
         <p className="text-gray_light text-base">
           Ou entre em contato diretamente:
