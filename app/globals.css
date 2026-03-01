@@ -12,6 +12,8 @@
   --color-gray_dark: #38BDF81A;
   --color-gray_light: #E5E7EB;
   --color-cyan_stronger: #1393ca;
+
+  --color-green_medium: #67BC28;
 }
 
 @theme inline {
@@ -23,6 +25,7 @@
   --color-gray_light: var(--color-gray_light);
   --color-cyan_stronger: var(--color-cyan_stronger);
 
+  --color-green_medium: var(--color-green_medium)
   --font-mono: "LXGW WenKai Mono TC", monospace;
 }
 

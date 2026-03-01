@@ -8,60 +8,23 @@ interface ProfileItemProps {
 }
 
 interface ProfileSectionProps {
-  data: ProfileItemProps[];
+  profileData: ProfileItemProps[];
 }
 
-export default function ProfileSection({ data }: ProfileSectionProps) {
-  const [activeTab, setActiveTab] = useState(0);
-
+export default function ProfileSection({ profileData }: ProfileSectionProps) {
   return (
-    <div>
-      {/* Tabs */}
-      <div className="flex mb-1 border-b border-gray_light/10">
-        {data.map((item, index) => {
-          const isActive = activeTab === index;
-
-          return (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`
-                flex-1
-                py-1 px-2
-                flex items-center justify-center gap-1
-                text-lg font-medium
-                transition-colors
-                cursor-pointer
-                ${
-                  isActive
-                    ? "text-gray_light font-bold border-b-2 border-gray_light"
-                    : "text-gray_light/60 hover:text-gray_light"
-                }
-              `}
-            >
-              {item.title}
-
-              <div
-                className={`
-                  w-0 h-0
-                  border-l-[4px] border-l-transparent
-                  border-r-[4px] border-r-transparent
-                  border-b-[6px] border-b-current
-                  transition-transform duration-300
-                  ${isActive ? "rotate-0" : "rotate-180"}
-                `}
-              />
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Conteúdo */}
-      <div className="pt-3">
-        <p className="text-lg leading-relaxed text-gray_light">
-          {data[activeTab].content}
-        </p>
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+      {profileData.map((item, i) => (
+        <div
+          key={i}
+          className="bg-gray_dark p-6 rounded-2xl border border-white/5 hover:border-blue-500/40 transition-all duration-300 hover:scale-105"
+        >
+          <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
+          <p className="text-gray_light text-sm leading-relaxed">
+            {item.content}
+          </p>
+        </div>
+      ))}
     </div>
   );
 }

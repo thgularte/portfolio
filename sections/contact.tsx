@@ -1,5 +1,6 @@
+import { HoverEffect } from "@/components/effects/Hover";
 import FormEmail from "@/components/FormEmail";
-import SectionHeader from "@/components/Section_Header";
+import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,20 +13,21 @@ export default function SectionContact() {
         subtitle={"Tem algum projeto em mente ? Vamos conversar!"}
       />
       <FormEmail />
-      <div className="flex flex-col items-center gap-4 mt-8">
+      <div className="flex flex-col items-center gap-4 mt-8 mb-12">
         {/* Texto */}
         <p className="text-gray_light text-base">
           Ou entre em contato diretamente:
         </p>
 
         {/* Badge de e-mail */}
+        <HoverEffect>
         <div
           className="
           flex items-center gap-3
           px-5 py-3
           bg-gray_light
           text-gray_dark
-          rounded-full
+          rounded-lg
           border border-gray_light
           shadow-sm
         "
@@ -46,6 +48,7 @@ export default function SectionContact() {
             </span>
           </Link>
         </div>
+        </HoverEffect>
       </div>
     </section>
   );

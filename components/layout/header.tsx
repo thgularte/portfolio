@@ -26,8 +26,8 @@ import { useState } from "react";
 const links = [
   { href: "/", id: "home", label: "Home" },
   { href: "/experiences", id: "experiences", label: "Experiências" },
-  { href: "/about", id: "about", label: "Sobre mim" },
   { href: "/projects", id: "projects", label: "Projetos" },
+  { href: "/about", id: "about", label: "Sobre mim" },
   { href: "/contact", id: "contact", label: "Contato" },
 ];
 
@@ -63,8 +63,8 @@ export function Header({ activeLinkId }: HeaderProps) {
                 href={link.href}
                 className={
                   isActive
-                    ? "rounded-full bg-gray_light text-slate_dark px-4 py-1 transition-colors"
-                    : "px-4 py-1 rounded-full text-gray_light hover:bg-gray_light/10 transition-colors"
+                    ? "rounded-lg bg-gray_light text-slate_dark px-4 py-1 transition-colors"
+                    : "px-4 py-1 rounded-lg text-gray_light hover:bg-gray_light/10 transition-colors"
                 }
               >
                 {link.label}

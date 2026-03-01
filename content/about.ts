@@ -1,17 +1,17 @@
 export const profileData = [
-    {
-      title: "Hobbies",
-      content:
-        "Meus hobbies são assistir os jogos do meu time Sport Club Internacional, assistir filmes, buscando sempre filmes que sejam interessantes e marcantes, ou só de terror mesmo.",
-    },
-    {
-      title: "Diversão",
-      content:
-        "Para me divertir costumo ir ao cinema, passear com meu fusca curtindo uma música usando meus CD's. Assim como curto assistir vários filmes aleatórios de atores e atrizes que gosto, jogar alguns jogos de video game mais antigo.",
-    },
-    {
-      title: "Descrição física",
-      content:
-        "Sou um homem jovem, de pele clara, cabelos curtos e loiros, levemente cacheados, e olhos azuis. Costumo usar roupas casuais, como camisetas de cores lisas e poucos detalhes. Tenho uma expressão tranquila, com um leve sorriso. Minha estatura é mediana e meu rosto é arredondado.",
-    },
-  ];
+  {
+    title: "Hobbies",
+    content:
+      "Sou fã do Sport Club Internacional e adoro acompanhar cada jogo. Além disso, sou apaixonado por filmes, principalmente de terror e aqueles que deixam marca pela história ou cinematografia. Sempre que posso, aproveito para maratonar séries ou explorar novas leituras.",
+  },
+  {
+    title: "Diversão",
+    content:
+      "Para me divertir gosto de ir ao cinema, curtir passeios com meu fusca ao som de CDs clássicos, ou simplesmente me perder em maratonas de filmes e games retrô. Pequenos momentos de lazer ajudam a recarregar minha criatividade e inspiração.",
+  },
+  {
+    title: "Curiosidades & Mini-projetos",
+    content:
+      "Costumo criar pequenos projetos de programação para aprender novas tecnologias ou testar ideias. Sou fascinado por gadgets e tecnologias diferentes, e sempre tento explorar formas de unir diversão com aprendizado no dia a dia.",
+  },
+];
