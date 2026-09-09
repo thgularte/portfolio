@@ -15,12 +15,9 @@ export default function Skills({ softSkills, hardSkills }: SkillsProps) {
   return (
     <section
       id="skills"
-      className="py-10 md:py-14 bg-slate_dark border-t border-b border-gray_light"
+      className="pb-6 bg-slate_dark"
     >
       <Container>
-        <h2 className="text-3xl md:text-3xl font-black mb-8 text-center text-gray_light">
-          Minhas habilidades
-        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Soft Skills */}

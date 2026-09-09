@@ -43,12 +43,8 @@ export function TestimonialsSection() {
   const visibleItems = testimonials.slice(start, start + itemsPerSlide);
 
   return (
-    <section className="relative w-full py-10 px-4 bg-slate_dark">
+    <section className="relative w-full pb-10 px-4 bg-slate_dark">
       <div className="mx-auto max-w-6xl">
-        <h2 className="mb-12 text-center text-3xl font-bold text-gray_light">
-          O que dizem sobre meu trabalho
-        </h2>
-
         {/* Slider */}
         <div
           className="relative grid gap-6 md:grid-cols-2 mb-8"

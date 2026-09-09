@@ -1,8 +1,10 @@
 import { DescriptionHome } from "./descritionHome";
-import Skills from "../components/Skills";
-import Stacks from "../components/Stacks";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import SkillsAndStacks from "@/components/SkillsAndStacks";
 import Reveal from "@/components/effects/Reveal";
 import { TestimonialsSection } from "@/components/FeedBacks";
+import { Container } from "@/components/layout/container";
+import { CustomDivider } from "@/components/ui/customDivider";
 
 export default function SectionHome() {
   const softSkills = {
@@ -31,13 +33,33 @@ export default function SectionHome() {
   };
 
   return (
-    <Reveal>
-      <section>
-        <DescriptionHome />
-        <Skills softSkills={softSkills} hardSkills={hardSkills} />
-        <Stacks />
-        <TestimonialsSection/>
+    <div className="bg-slate_light min-h-screen">
+      <Reveal>
+        <section>
+          <DescriptionHome />
+        </section>
+      </Reveal>
+
+      <CustomDivider />
+
+      <FeaturedProjects />
+
+      <CustomDivider />
+
+      <SkillsAndStacks softSkills={softSkills} hardSkills={hardSkills} />
+
+      <CustomDivider />
+
+      <section className="bg-slate_dark py-12">
+        <Container>
+          <Reveal>
+            <h2 className="text-2xl md:text-3xl font-mono text-center mb-8 text-gray_light font-bold">
+              <span className="text-cyan_stronger">//</span> DEPOIMENTOS
+            </h2>
+          </Reveal>
+        </Container>
+        <TestimonialsSection />
       </section>
-    </Reveal>
+    </div>
   );
 }
