@@ -1,34 +1,40 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "portfolio-theodor-gularte",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --conditions=react-server --test tests/contact.test.ts tests/github.test.ts tests/smtp.test.ts",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src tests *.ts *.mjs"
   },
-  "overrides": {
-    "minimatch": "^10.2.1",
-    "glob": "^11.0.0"
+  "engines": {
+    "node": ">=20.9.0"
   },
   "dependencies": {
-    "@fontsource/lxgw-wenkai-mono-tc": "^5.2.8",
-    "keen-slider": "^6.8.6",
-    "next": "^16.1.6",
-    "nodemailer": "^8.0.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "@fontsource/lxgw-wenkai-mono-tc": "^5.3.1",
+    "lucide-react": "^1.47.0",
+    "next": "^16.4.3",
+    "nodemailer": "^10.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/nodemailer": "^7.0.11",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^10.0.2",
-    "eslint-config-next": "^16.1.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.3",
+    "prettier": "^3.9.8",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3"
   }
 }

@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-ink: var(--color-text);
+  --color-soft: var(--color-text-soft);
+  --color-primary: var(--color-primary);
+  --color-education: var(--color-education);
+  --color-work: var(--color-work);
+  --color-line: var(--color-border);
+  --font-hand: var(--font-portfolio), "Courier New", monospace;
+  --text-page-title: clamp(2.25rem, 4vw, 3rem);
+  --text-section-title: clamp(2rem, 3.8vw, 3rem);
+  --text-hero: clamp(2.5rem, 4vw, 3.5rem);
+  --spacing-section: var(--space-section);
+  --radius-card: var(--radius-md);
+  --radius-panel: var(--radius-lg);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-portfolio), "Courier New", monospace;
+    font-size: 1.125rem;
+    line-height: 1.35;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
+  }
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+  button,
+  summary {
+    cursor: pointer;
+  }
+  a,
+  button,
+  summary {
+    transition:
+      color 160ms,
+      background-color 160ms,
+      border-color 160ms,
+      opacity 160ms;
+  }
+  a:hover {
+    color: var(--color-primary);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 5px;
+  }
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-bg);
+  }
+  input,
+  textarea {
+    color-scheme: light;
+  }
+  p,
+  li,
+  a {
+    overflow-wrap: anywhere;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+@layer components {
+  .card-padding {
+    padding: 1.5rem;
+  }
+  .card-compact {
+    padding: 1rem;
+  }
+  .icon-box {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  @media (min-width: 640px) {
+    .card-padding {
+      padding: 2rem;
+    }
+    .card-compact {
+      padding: 1.25rem;
+    }
+  }
+  .page-container {
+    --container-current: var(--container-standard);
+    width: min(calc(100% - 3rem), var(--container-current));
+    margin-inline: auto;
+  }
+  .page-container[data-width="narrow"] {
+    --container-current: var(--container-narrow);
+  }
+  .page-container[data-width="wide"] {
+    --container-current: var(--container-wide);
+  }
+  .section-divider {
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-border) 20%,
+      var(--color-primary) 50%,
+      var(--color-border) 80%,
+      transparent
+    );
+  }
+  .field-input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    background: var(--color-text-soft);
+    color: var(--color-bg);
+    padding: 0.75rem 1.5rem;
+  }
+  .field-input::placeholder {
+    color: var(--color-surface);
+    opacity: 0.9;
+  }
+  .field-input[aria-invalid="true"] {
+    border-color: var(--color-work);
+  }
+  .timeline {
+    margin-left: 0.75rem;
+    border-left: 1px solid var(--color-primary);
+  }
+  .timeline-item {
+    position: relative;
+    padding: 0 0 1.5rem 2rem;
+  }
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -0.95rem;
+    top: 1.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    background: var(--color-surface);
+  }
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    left: -0.2rem;
+    top: 2rem;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+  .corporate-details[open] .accordion-chevron {
+    transform: rotate(180deg);
+  }
+  .corporate-details[open] .corporate-summary {
+    background: color-mix(in srgb, var(--color-surface), var(--color-text) 4%);
+  }
+  .social-circle:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  @media (max-width: 639px) {
+    .page-container {
+      --container-current: var(--container-standard);
+      width: min(calc(100% - 2rem), var(--container-current));
+    }
+    .timeline-item {
+      padding-left: 1.5rem;
+    }
+  }
+}
