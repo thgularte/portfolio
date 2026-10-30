@@ -36,7 +36,7 @@ export const personalStories = [
   {
     title: "Hobbies",
     description:
-      "Sou fã do Sport Club Internacional e adoro acompanhar cada jogo. Além disso, sou apaixonado por filmes, principalmente de terror e aqueles que deixam marca pela história ou cinematografia. Sempre que posso, aproveito para maratonar séries ou explorar novas leituras.",
+      "Sou apaixonado por filmes, principalmente de terror e aqueles que deixam marca pela história ou cinematografia. Sempre que posso, aproveito para maratonar séries ou explorar novas leituras.",
   },
   {
     title: "Diversão",
